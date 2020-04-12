@@ -1,0 +1,30 @@
+﻿<h2>Create</h2>
+<form class="form-horizontal" ng-submit="createUser(user)">
+    <h4>Create a new user</h4>
+    <hr />
+
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Name</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" ng-model="user.Name" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Email</label>
+        <div class="col-lg-10">
+            <input type="email" class="form-control" ng-model="user.Email" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Address</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" ng-model="user.Address" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <input type="submit" class="btn btn-success" value="Create"/>
+            <a href="#/" class="btn btn-default">Cancel</a>
+        </div>
+    </div>
+</form>
